@@ -12,6 +12,7 @@ class Course(models.Model):
 	session_ids = fields.One2many(
         'openacademy.session', 'course_id', string="Sessions")
 
+
 class Session(models.Model):
 	_name = 'openacademy.session'
 	_description = 'OpenAcademy Sessions'
